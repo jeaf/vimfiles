@@ -38,7 +38,7 @@ set relativenumber
 set showtabline=1
 
 " Setup external grep
-set grepprg=grep\ -n
+" set grepprg=grep\ -n
 
 " Mappings used for tab navigation
 " :map <C-S-tab> :tabprevious<cr>
@@ -126,9 +126,6 @@ set showcmd
 " Always leave an offset of 5 lines at top and bottom, when possible
 " set scrolloff=5
 
-" Adjust wrap options
-set wrap
-
 " set showbreak=____ " What will appear on a line break
 set cpoptions+=n
 
@@ -159,17 +156,17 @@ set viminfo+=/500 " Save max 500 lines of search history
 set sessionoptions+=resize
 
 " Set up the view options
-set viewoptions=folds,cursor
-augroup vimrc
-    autocmd BufWritePost *
-    \   if expand('%') != '' && &buftype !~ 'nofile'
-    \|      mkview
-    \|  endif
-    autocmd BufRead *
-    \   if expand('%') != '' && &buftype !~ 'nofile'
-    \|      silent loadview
-    \|  endif
-augroup END
+" set viewoptions=folds,cursor
+" augroup vimrc
+"     autocmd BufWritePost *
+"     \   if expand('%') != '' && &buftype !~ 'nofile'
+"     \|      mkview
+"     \|  endif
+"     autocmd BufRead *
+"     \   if expand('%') != '' && &buftype !~ 'nofile'
+"     \|      silent loadview
+"     \|  endif
+" augroup END
 
 " Show matches for () [] etc
 set showmatch
@@ -210,12 +207,15 @@ vmap ,u <esc>l3x<esc>'<4x<esc>'>$
 :nnoremap <space> :buffers<CR>:buffer<Space>
 
 " Faster prev, next, first, last for buffers
-" map <A-h> :bprevious<cr>
-map <A-h> :MBEbp<cr>
-" map <A-l> :bnext<cr>
-map <A-l> :MBEbn<cr>
+map <A-h> :bprevious<cr>
+" map <A-h> :MBEbp<cr>
+map <A-l> :bnext<cr>
+" map <A-l> :MBEbn<cr>
 map <A-k> :bfirst<cr>
 map <A-j> :blast<cr>
+
+" Buffer closing
+map ,w :Bdelete<cr>
 
 " Set nifty split-windows navigation trick
 " see vimtip 173
@@ -241,10 +241,10 @@ nmap ,8 :b 8<cr>
 nmap ,9 :b 9<cr>
 
 " Setup minibufexpl
-let g:miniBufExplBuffersNeeded  = 0
-let g:miniBufExplCycleArround   = 1
-let g:miniBufExplStatusLineText = "%{getcwd()}"
-let g:miniBufExplUseSingleClick = 1
+" let g:miniBufExplBuffersNeeded  = 0
+" let g:miniBufExplCycleArround   = 1
+" let g:miniBufExplStatusLineText = "%{getcwd()}"
+" let g:miniBufExplUseSingleClick = 1
 
 " Remap arrow keys
 " Text bubbling (modified to use the arrow key directly instead of CTRL-up,
@@ -329,7 +329,7 @@ set nowrap
 filetype plugin on
 
 " Configure taglist
-let Tlist_Ctags_Cmd='%HOME_ROOT%\program\tool\ctags.exe'
+" let Tlist_Ctags_Cmd='%HOME_ROOT%\program\tool\ctags.exe'
 
 " Configure marks
 let g:showmarks_enable=0
@@ -340,16 +340,16 @@ noremap <A-n> ]'
 let g:pydoc_cmd="C:/Python27/Lib/pydoc.py"
 
 " Configure MRU
-let MRU_Exclude_Files='Temp\\bzr_log'
+" let MRU_Exclude_Files='Temp\\bzr_log'
 let MRU_Window_Height=15
 let MRU_Max_Menu_Entries=40
 let MRU_Max_Submenu_Entries=50
-map ,r :MRU<CR>/
+map ,r :MRU<CR>
 
 " Set vim to full screen
 map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
 
 " Configure sparkup plugin
-let g:sparkupExecuteMapping = '<a-e>'
-let g:sparkupNextMapping    = '<a-n>'
+" let g:sparkupExecuteMapping = '<a-e>'
+" let g:sparkupNextMapping    = '<a-n>'
 
