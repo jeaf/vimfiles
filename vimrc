@@ -8,7 +8,8 @@ set guifont=Consolas:h11:cANSI
 " set guifont=Courier_New:h10:cANSI
 
 " Set colorscheme
-colorscheme desert
+" colorscheme desert
+colorscheme slate
 
 " Render vim incompatible with Vi, but adds functionality
 set nocompatible
@@ -241,10 +242,9 @@ nmap ,8 :b 8<cr>
 nmap ,9 :b 9<cr>
 
 " Setup minibufexpl
-" let g:miniBufExplBuffersNeeded  = 0
-" let g:miniBufExplCycleArround   = 1
-" let g:miniBufExplStatusLineText = "%{getcwd()}"
-" let g:miniBufExplUseSingleClick = 1
+let g:miniBufExplUseSingleClick = 1
+let g:miniBufExplVSplit         = 10
+let g:miniBufExplMaxSize        = 50
 
 " Remap arrow keys
 " Text bubbling (modified to use the arrow key directly instead of CTRL-up,
@@ -335,6 +335,9 @@ filetype plugin on
 let g:showmarks_enable=0
 noremap <A-p> ['
 noremap <A-n> ]'
+
+" Switch between cpp and h
+map <A-o> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 
 " Configure pydoc
 let g:pydoc_cmd="C:/Python27/Lib/pydoc.py"
