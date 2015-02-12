@@ -979,7 +979,7 @@ function! <SID>ResizeWindow()
   else 
 
     if g:miniBufExplMaxSize != 0
-      let l:newWidth = s:maxTabWidth
+      let l:newWidth = s:maxTabWidth + 5
       if l:newWidth > g:miniBufExplMaxSize 
           let l:newWidth = g:miniBufExplMaxSize
       endif

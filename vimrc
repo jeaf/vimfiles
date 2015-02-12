@@ -243,7 +243,7 @@ nmap ,9 :b 9<cr>
 
 " Setup minibufexpl
 let g:miniBufExplUseSingleClick = 1
-let g:miniBufExplVSplit         = 10
+let g:miniBufExplVSplit         = 20
 let g:miniBufExplMaxSize        = 50
 
 " Remap arrow keys
