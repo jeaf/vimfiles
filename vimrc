@@ -3,7 +3,7 @@ set langmenu=en_US.UTF-8    " sets the language of the menu (gvim)
 " language en                 " sets the language of the messages / ui (vim)
 
 " Allow using a specifc set of settings per directory
-set exrc
+" set exrc
 
 " Configure GUI
 set guioptions=begrLt
