@@ -2,6 +2,9 @@
 set langmenu=en_US.UTF-8    " sets the language of the menu (gvim)
 " language en                 " sets the language of the messages / ui (vim)
 
+" Allow using a specifc set of settings per directory
+set exrc
+
 " Configure GUI
 set guioptions=begrLt
 set guifont=Consolas:h11:cANSI
@@ -356,3 +359,4 @@ map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
 " let g:sparkupExecuteMapping = '<a-e>'
 " let g:sparkupNextMapping    = '<a-n>'
 
+set secure
