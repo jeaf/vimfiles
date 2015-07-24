@@ -3,6 +3,7 @@ set langmenu=en_US.UTF-8    " sets the language of the menu (gvim)
 " language en                 " sets the language of the messages / ui (vim)
 
 " Allow using a specifc set of settings per directory
+" (disabled because of security risks)
 " set exrc
 
 " Configure GUI
@@ -330,6 +331,9 @@ set nowrap
 " Code completion
 " autocmd FileType python set omnifunc=pythoncomplete#Complete
 filetype plugin on
+
+" Configure tags
+map ,t :tag 
 
 " Configure taglist
 " let Tlist_Ctags_Cmd='%HOME_ROOT%\program\tool\ctags.exe'
