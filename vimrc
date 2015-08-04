@@ -363,4 +363,7 @@ map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
 " let g:sparkupExecuteMapping = '<a-e>'
 " let g:sparkupNextMapping    = '<a-n>'
 
+" Configure EasyMotion plugin
+map ,m \\
+
 set secure
