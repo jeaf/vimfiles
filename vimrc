@@ -259,8 +259,8 @@ nmap <A-0> :b 20<cr>
 
 " Setup minibufexpl
 let g:miniBufExplUseSingleClick = 1
-" let g:miniBufExplVSplit         = 20
-" let g:miniBufExplMaxSize        = 50
+let g:miniBufExplVSplit         = 20
+let g:miniBufExplMaxSize        = 50
 
 " Remap arrow keys
 " Text bubbling (modified to use the arrow key directly instead of CTRL-up,
