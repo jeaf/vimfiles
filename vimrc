@@ -12,8 +12,9 @@ set guifont=Consolas:h11:cANSI
 " set guifont=Courier_New:h10:cANSI
 
 " Set colorscheme
+colorscheme darkblue
 " colorscheme desert
-colorscheme slate
+" colorscheme slate
 
 " Render vim incompatible with Vi, but adds functionality
 set nocompatible
@@ -244,11 +245,22 @@ nmap ,6 :b 6<cr>
 nmap ,7 :b 7<cr>
 nmap ,8 :b 8<cr>
 nmap ,9 :b 9<cr>
+nmap ,0 :b 10<cr>
+nmap <A-1> :b 11<cr>
+nmap <A-2> :b 12<cr>
+nmap <A-3> :b 13<cr>
+nmap <A-4> :b 14<cr>
+nmap <A-5> :b 15<cr>
+nmap <A-6> :b 16<cr>
+nmap <A-7> :b 17<cr>
+nmap <A-8> :b 18<cr>
+nmap <A-9> :b 19<cr>
+nmap <A-0> :b 20<cr>
 
 " Setup minibufexpl
 let g:miniBufExplUseSingleClick = 1
-let g:miniBufExplVSplit         = 20
-let g:miniBufExplMaxSize        = 50
+" let g:miniBufExplVSplit         = 20
+" let g:miniBufExplMaxSize        = 50
 
 " Remap arrow keys
 " Text bubbling (modified to use the arrow key directly instead of CTRL-up,
