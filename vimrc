@@ -43,6 +43,10 @@ set relativenumber
 " Only show the tab line if there are two or more tabs
 set showtabline=1
 
+" Setup easier navigation for :cn
+map <A-Left> :cp<CR>
+map <A-Right> :cn<CR>
+
 " Setup external grep
 " set grepprg=grep\ -n
 
