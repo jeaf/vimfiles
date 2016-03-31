@@ -12,7 +12,7 @@ set guifont=Consolas:h11:cANSI
 " set guifont=Courier_New:h10:cANSI
 
 " Configure airline
-let g:airline#extensions#bufferline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
 
 " Set colorscheme
 colorscheme darkblue
