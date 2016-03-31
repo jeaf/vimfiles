@@ -13,6 +13,7 @@ set guifont=Consolas:h11:cANSI
 
 " Configure airline
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme = 'luna'
 
 " Set colorscheme
 colorscheme darkblue
