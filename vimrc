@@ -11,6 +11,9 @@ set guioptions=begrLt
 set guifont=Consolas:h11:cANSI
 " set guifont=Courier_New:h10:cANSI
 
+" Configure airline
+let g:airline#extensions#bufferline#enabled = 1
+
 " Set colorscheme
 colorscheme darkblue
 " colorscheme desert
@@ -74,7 +77,7 @@ set statusline+=\ %P                                         " percent through f
 " function GuiTabLabel()
 "   let label = ''
 "   let bufnrlist = tabpagebuflist(v:lnum)
-" 
+"
 "   " Add '+' if one of the buffers in the tab page is modified
 "   for bufnr in bufnrlist
 "     if getbufvar(bufnr, "&modified")
@@ -82,7 +85,7 @@ set statusline+=\ %P                                         " percent through f
 "       break
 "     endif
 "   endfor
-" 
+"
 "   " Append the number of windows in the tab page if more than one
 "   let wincount = tabpagewinnr(v:lnum, '$')
 "   if wincount > 1
@@ -91,7 +94,7 @@ set statusline+=\ %P                                         " percent through f
 "   if label != ''
 "     let label .= ' '
 "   endif
-" 
+"
 "   " Return the label
 "   return label
 " endfunction
@@ -99,7 +102,7 @@ set statusline+=\ %P                                         " percent through f
 
 " Setup how backspace behaves
 set backspace=indent,eol,start
-	
+
 " Space, tabs, indent options
 set expandtab
 set smarttab
@@ -119,7 +122,7 @@ set tildeop
 syntax on
 
 " Set search options
-set ignorecase " Will ignore case in searches... 
+set ignorecase " Will ignore case in searches...
 set smartcase  " ...unless capital letters are used in the search pattern
 set hlsearch   " Highlight matches with the last search pattern
 set incsearch  " Search will be incremental
@@ -153,7 +156,7 @@ set noswapfile
 
 " Set up the viminfo option (session persistence)
 set viminfo='1000 " Save marks for 1000 files
-set viminfo+=f1   " Save global marks 
+set viminfo+=f1   " Save global marks
 set viminfo+=<500 " Save max 500 lines for each of the registers
 set viminfo+=:500 " Save max 500 lines for command line history
 set viminfo+=@500 " Save max 500 lines for input line history
@@ -262,9 +265,9 @@ nmap <A-9> :b 19<cr>
 nmap <A-0> :b 20<cr>
 
 " Setup minibufexpl
-let g:miniBufExplUseSingleClick = 1
-let g:miniBufExplVSplit         = 20
-let g:miniBufExplMaxSize        = 50
+" let g:miniBufExplUseSingleClick = 1
+" let g:miniBufExplVSplit         = 20
+" let g:miniBufExplMaxSize        = 50
 
 " Remap arrow keys
 " Text bubbling (modified to use the arrow key directly instead of CTRL-up,
@@ -349,7 +352,7 @@ set nowrap
 filetype plugin on
 
 " Configure tags
-map ,t :tag 
+map ,t :tag
 
 " Configure taglist
 " let Tlist_Ctags_Cmd='%HOME_ROOT%\program\tool\ctags.exe'
