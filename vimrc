@@ -17,6 +17,9 @@ set guifont=Consolas:h11:cANSI
 let g:airline#extensions#disable_rtp_load = 1
 let g:airline_extensions = ['tabline']
 let g:airline_theme = 'luna'
+let g:airline_section_b = '%n'
+let g:airline_section_y = '[%{(&fenc==""?&enc:&fenc)}, %{&ff}]'
+let g:airline_section_z = '%l/%L [col:%c] %P'
 
 " Set colorscheme
 colorscheme darkblue
