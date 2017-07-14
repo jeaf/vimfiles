@@ -12,7 +12,10 @@ set guifont=Consolas:h11:cANSI
 " set guifont=Courier_New:h10:cANSI
 
 " Configure airline
-let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#whitespace#enabled = 0
+let g:airline#extensions#disable_rtp_load = 1
+let g:airline_extensions = ['tabline']
 let g:airline_theme = 'luna'
 
 " Set colorscheme
