@@ -1,3 +1,6 @@
 [submodule "pack/bundle/start/ctrlp"]
 	path = pack/bundle/start/ctrlp
 	url = https://github.com/ctrlpvim/ctrlp.vim
+[submodule "pack\\bundle\\start\\vim-signature"]
+	path = pack\\bundle\\start\\vim-signature
+	url = https://github.com/kshenoy/vim-signature
