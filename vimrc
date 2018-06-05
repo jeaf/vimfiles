@@ -21,6 +21,9 @@ let g:airline_section_b = '%n'
 let g:airline_section_y = '[%{(&fenc==""?&enc:&fenc)}, %{&ff}]'
 let g:airline_section_z = '%l/%L [col:%c] %P'
 
+" Configure ctrlp
+let g:ctrlp_cmd = 'CtrlPMixed'
+
 " Set colorscheme
 colorscheme darkblue
 " colorscheme desert
