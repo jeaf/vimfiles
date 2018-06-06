@@ -4,3 +4,6 @@
 [submodule "pack\\bundle\\start\\vim-signature"]
 	path = pack\\bundle\\start\\vim-signature
 	url = https://github.com/kshenoy/vim-signature
+[submodule "pack/bundle/start/agrep"]
+	path = pack/bundle/start/agrep
+	url = https://github.com/ramele/agrep
