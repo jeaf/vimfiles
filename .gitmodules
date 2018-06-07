@@ -13,3 +13,6 @@
 [submodule "pack/bundle/start/jellybeans"]
 	path = pack/bundle/start/jellybeans
 	url = https://github.com/nanotech/jellybeans.vim
+[submodule "pack/bundle/start/nerdtree"]
+	path = pack/bundle/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree
