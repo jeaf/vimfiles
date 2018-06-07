@@ -25,9 +25,7 @@ let g:airline_section_z = '%l/%L [col:%c] %P'
 let g:ctrlp_cmd = 'CtrlPMixed'
 
 " Set colorscheme
-colorscheme darkblue
-" colorscheme desert
-" colorscheme slate
+colorscheme Iosvkem
 
 " Render vim incompatible with Vi, but adds functionality
 set nocompatible

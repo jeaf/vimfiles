@@ -7,3 +7,6 @@
 [submodule "pack/bundle/start/agrep"]
 	path = pack/bundle/start/agrep
 	url = https://github.com/ramele/agrep
+[submodule "pack/bundle/start/iosvkem"]
+	path = pack/bundle/start/iosvkem
+	url = https://github.com/neutaaaaan/iosvkem
