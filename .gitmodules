@@ -22,3 +22,6 @@
 [submodule "pack/bundle/start/easygrep"]
 	path = pack/bundle/start/easygrep
 	url = https://github.com/vim-scripts/EasyGrep
+[submodule "pack/bundle/start/vim-grepper"]
+	path = pack/bundle/start/vim-grepper
+	url = https://github.com/mhinz/vim-grepper
