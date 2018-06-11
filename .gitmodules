@@ -14,7 +14,7 @@
 	path = pack/bundle/start/jellybeans
 	url = https://github.com/nanotech/jellybeans.vim
 [submodule "pack/bundle/start/nerdtree"]
-	path = pack/bundle/start/nerdtree
+	path = pack/bundle/opt/nerdtree
 	url = https://github.com/scrooloose/nerdtree
 [submodule "pack/bundle/start/vim-colors-solarized"]
 	path = pack/bundle/start/vim-colors-solarized
