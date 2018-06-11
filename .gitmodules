@@ -20,7 +20,7 @@
 	path = pack/bundle/start/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized
 [submodule "pack/bundle/start/easygrep"]
-	path = pack/bundle/start/easygrep
+	path = pack/bundle/opt/easygrep
 	url = https://github.com/vim-scripts/EasyGrep
 [submodule "pack/bundle/start/vim-grepper"]
 	path = pack/bundle/start/vim-grepper
