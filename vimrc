@@ -294,8 +294,9 @@ vmap <C-Left> <gv
 vmap <C-Right> >gv
 
 " Map ALT-D to set the current directory to the directory of the current
-" buffer
+" buffer. Also ,- to open netrw (dir explorer) for containing folder
 nnoremap <A-d> :cd %:p:h<CR>:pwd<CR>
+nmap ,- :e %:p:h<CR>
 
 " Set nifty shortcut to open containing folder (see VimTip 311)
 if has("gui_running")
