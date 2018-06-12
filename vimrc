@@ -296,7 +296,18 @@ vmap <C-Right> >gv
 " Map ALT-D to set the current directory to the directory of the current
 " buffer. Also ,- to open netrw (dir explorer) for containing folder
 nnoremap <A-d> :cd %:p:h<CR>:pwd<CR>
-nmap ,- :e %:p:h<CR>
+nmap - :e %:p:h<CR>
+
+" Fix netrw bug that causes weird buffers to appear, and breaks bn bp
+set nohidden
+augroup netrw_buf_hidden_fix
+    autocmd!
+    " Set all non-netrw buffers to bufhidden=hide
+    autocmd BufWinEnter *
+                \  if &ft != 'netrw'
+                \|     set bufhidden=hide
+                \| endif
+augroup end
 
 " Set nifty shortcut to open containing folder (see VimTip 311)
 if has("gui_running")
