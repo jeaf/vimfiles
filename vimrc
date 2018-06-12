@@ -20,6 +20,20 @@ let g:airline_extensions = ['tabline']
 let g:airline_section_b = '%n'
 let g:airline_section_y = '[%{(&fenc==""?&enc:&fenc)}, %{&ff}]'
 let g:airline_section_z = '%l/%L [col:%c] %P'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline#extensions#tabline#left_sep = ''
+let g:airline#extensions#tabline#left_alt_sep = ''
+let g:airline#extensions#tabline#buffer_idx_mode = 1
+nmap ,1 <Plug>AirlineSelectTab1
+nmap ,2 <Plug>AirlineSelectTab2
+nmap ,3 <Plug>AirlineSelectTab3
+nmap ,4 <Plug>AirlineSelectTab4
+nmap ,5 <Plug>AirlineSelectTab5
+nmap ,6 <Plug>AirlineSelectTab6
+nmap ,7 <Plug>AirlineSelectTab7
+nmap ,8 <Plug>AirlineSelectTab8
+nmap ,9 <Plug>AirlineSelectTab9
 
 " Configure ctrlp
 let g:ctrlp_cmd = 'CtrlPMixed'
@@ -249,33 +263,6 @@ noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
-
-" Easier nav to buffers 1-9
-nmap ,1 :b 1<cr>
-nmap ,2 :b 2<cr>
-nmap ,3 :b 3<cr>
-nmap ,4 :b 4<cr>
-nmap ,5 :b 5<cr>
-nmap ,6 :b 6<cr>
-nmap ,7 :b 7<cr>
-nmap ,8 :b 8<cr>
-nmap ,9 :b 9<cr>
-nmap ,0 :b 10<cr>
-nmap <A-1> :b 11<cr>
-nmap <A-2> :b 12<cr>
-nmap <A-3> :b 13<cr>
-nmap <A-4> :b 14<cr>
-nmap <A-5> :b 15<cr>
-nmap <A-6> :b 16<cr>
-nmap <A-7> :b 17<cr>
-nmap <A-8> :b 18<cr>
-nmap <A-9> :b 19<cr>
-nmap <A-0> :b 20<cr>
-
-" Setup minibufexpl
-" let g:miniBufExplUseSingleClick = 1
-" let g:miniBufExplVSplit         = 20
-" let g:miniBufExplMaxSize        = 50
 
 " Remap arrow keys
 " Text bubbling (modified to use the arrow key directly instead of CTRL-up,
