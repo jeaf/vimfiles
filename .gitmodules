@@ -5,7 +5,7 @@
 	path = pack/bundle/start/vim-signature
 	url = https://github.com/kshenoy/vim-signature
 [submodule "pack/bundle/opt/agrep"]
-	path = pack/bundle/opt/agrep
+	path = pack/bundle/start/agrep
 	url = https://github.com/ramele/agrep
 [submodule "pack/bundle/start/iosvkem"]
 	path = pack/bundle/start/iosvkem
