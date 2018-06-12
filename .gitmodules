@@ -25,3 +25,9 @@
 [submodule "pack/bundle/start/vim-grepper"]
 	path = pack/bundle/start/vim-grepper
 	url = https://github.com/mhinz/vim-grepper
+[submodule "pack/bundle/start/vim-vividchalk"]
+	path = pack/bundle/start/vim-vividchalk
+	url = https://github.com/tpope/vim-vividchalk
+[submodule "pack/bundle/start/gruvbox"]
+	path = pack/bundle/start/gruvbox
+	url = https://github.com/morhetz/gruvbox
