@@ -31,3 +31,6 @@
 [submodule "pack/bundle/start/gruvbox"]
 	path = pack/bundle/start/gruvbox
 	url = https://github.com/morhetz/gruvbox
+[submodule "pack/bundle/start/vim-airline"]
+	path = pack/bundle/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
