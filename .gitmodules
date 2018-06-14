@@ -34,3 +34,9 @@
 [submodule "pack/bundle/start/vim-airline"]
 	path = pack/bundle/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline
+[submodule "pack/bundle/start/dracula"]
+	path = pack/bundle/start/dracula
+	url = https://github.com/dracula/vim
+[submodule "pack/bundle/start/tender"]
+	path = pack/bundle/start/tender
+	url = https://github.com/jacoborus/tender.vim
