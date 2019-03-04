@@ -39,7 +39,9 @@ nmap ,9 <Plug>AirlineSelectTab9
 let g:ctrlp_cmd = 'CtrlPMixed'
 
 " Set colorscheme
-colorscheme vividchalk
+if has('gui_running')
+    colorscheme vividchalk
+endif
 
 " Render vim incompatible with Vi, but adds functionality
 set nocompatible
