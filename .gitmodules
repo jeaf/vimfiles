@@ -43,3 +43,6 @@
 [submodule "pack/bundle/start/minibufexpl"]
 	path = pack/bundle/opt/minibufexpl
 	url = https://github.com/fholgado/minibufexpl.vim
+[submodule "pack/bundle/start/vim-buffergator"]
+	path = pack/bundle/opt/vim-buffergator
+	url = https://github.com/jeetsukumaran/vim-buffergator
