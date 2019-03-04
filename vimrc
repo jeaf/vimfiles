@@ -135,7 +135,7 @@ set autoindent
 " set cindent
 
 " Text width options
-set colorcolumn=80
+set colorcolumn=120
 
 " The ~ command (to change case) works like an operator
 set tildeop
