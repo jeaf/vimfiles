@@ -18,6 +18,9 @@ let g:tagbar_left = 1
 let g:tagbar_singleclick = 1
 let g:tagbar_sort = 0
 
+" Disable netrw (adds slowness on network drives)
+let g:loaded_netrwPlugin = 1
+
 " Configure airline
 " let g:airline#extensions#tabline#enabled = 1
 " let g:airline#extensions#whitespace#enabled = 0

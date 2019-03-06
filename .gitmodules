@@ -1,11 +1,11 @@
 [submodule "pack/bundle/start/ctrlp"]
-	path = pack/bundle/start/ctrlp
+	path = pack/bundle/opt/ctrlp
 	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule "pack/bundle/start/vim-signature"]
-	path = pack/bundle/start/vim-signature
+	path = pack/bundle/opt/vim-signature
 	url = https://github.com/kshenoy/vim-signature
 [submodule "pack/bundle/opt/agrep"]
-	path = pack/bundle/start/agrep
+	path = pack/bundle/opt/agrep
 	url = https://github.com/ramele/agrep
 [submodule "pack/bundle/start/iosvkem"]
 	path = pack/bundle/start/iosvkem
@@ -23,7 +23,7 @@
 	path = pack/bundle/opt/easygrep
 	url = https://github.com/vim-scripts/EasyGrep
 [submodule "pack/bundle/start/vim-grepper"]
-	path = pack/bundle/start/vim-grepper
+	path = pack/bundle/opt/vim-grepper
 	url = https://github.com/mhinz/vim-grepper
 [submodule "pack/bundle/start/vim-vividchalk"]
 	path = pack/bundle/start/vim-vividchalk
@@ -32,7 +32,7 @@
 	path = pack/bundle/start/gruvbox
 	url = https://github.com/morhetz/gruvbox
 [submodule "pack/bundle/start/vim-airline"]
-	path = pack/bundle/start/vim-airline
+	path = pack/bundle/opt/vim-airline
 	url = https://github.com/vim-airline/vim-airline
 [submodule "pack/bundle/start/dracula"]
 	path = pack/bundle/start/dracula
