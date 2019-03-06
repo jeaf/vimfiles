@@ -6,6 +6,9 @@ set langmenu=en_US.UTF-8    " sets the language of the menu (gvim)
 " (disabled because of security risks)
 " set exrc
 
+" Disable buffers menu (seems to impact performance on network drives)
+let g:no_buffers_menu = 1
+
 " Configure GUI
 set guioptions=begrLt
 set guifont=Consolas:h11:cANSI
