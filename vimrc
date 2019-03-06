@@ -11,6 +11,13 @@ set guioptions=begrLt
 set guifont=Consolas:h11:cANSI
 " set guifont=Courier_New:h10:cANSI
 
+" Configure TagBar
+let g:tagbar_case_insensitive = 1
+let g:tagbar_ctags_bin = '~\app\ctags58\ctags.exe'
+let g:tagbar_left = 1
+let g:tagbar_singleclick = 1
+let g:tagbar_sort = 0
+
 " Configure airline
 " let g:airline#extensions#tabline#enabled = 1
 " let g:airline#extensions#whitespace#enabled = 0
