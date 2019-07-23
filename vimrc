@@ -21,8 +21,9 @@ let g:tagbar_left = 1
 let g:tagbar_singleclick = 1
 let g:tagbar_sort = 0
 
-" Disable netrw (adds slowness on network drives)
-let g:loaded_netrwPlugin = 1
+" To disable netrw, uncomment the following line (netrw seems to add slowness
+" on network drives in certain situations)
+" let g:loaded_netrwPlugin = 1
 
 " Configure airline
 " let g:airline#extensions#tabline#enabled = 1
@@ -53,7 +54,8 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 
 " Set colorscheme
 if has('gui_running')
-    colorscheme vividchalk
+    "colorscheme vividchalk
+    colorscheme slate
 endif
 
 " Render vim incompatible with Vi, but adds functionality
@@ -86,6 +88,9 @@ set showtabline=1
 " Setup easier navigation for :cn
 map <A-Left> :cp<CR>
 map <A-Right> :cn<CR>
+
+" Setup complete to avoid long searches on i_CTRL-N
+set complete=.,w,b
 
 " Setup external grep
 " set grepprg=grep\ -n
