@@ -50,12 +50,12 @@ nmap ,8 <Plug>AirlineSelectTab8
 nmap ,9 <Plug>AirlineSelectTab9
 
 " Configure ctrlp
-let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_map = '<space>'
+let g:ctrlp_cmd = 'CtrlPBuffer'
 
 " Set colorscheme
 if has('gui_running')
-    "colorscheme vividchalk
-    colorscheme slate
+    colorscheme palenight
 endif
 
 " Render vim incompatible with Vi, but adds functionality
@@ -258,8 +258,8 @@ vmap ,u <esc>l3x<esc>'<4x<esc>'>$
 " Buffer/windows mappings
 "
 
-" Easier switching to a buffer
-:nnoremap <space> :buffers<CR>:buffer<Space>
+" Easier switching to a buffer (disabled, we use ctrlp instead)
+" :nnoremap <space> :buffers<CR>:buffer<Space>
 
 " Faster prev, next, first, last for buffers
 map <A-h> :bprevious<cr>

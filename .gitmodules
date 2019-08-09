@@ -1,5 +1,5 @@
 [submodule "pack/bundle/start/ctrlp"]
-	path = pack/bundle/opt/ctrlp
+	path = pack/bundle/start/ctrlp
 	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule "pack/bundle/start/vim-signature"]
 	path = pack/bundle/opt/vim-signature
@@ -49,3 +49,9 @@
 [submodule "pack/bundle/start/tagbar"]
 	path = pack/bundle/start/tagbar
 	url = https://github.com/majutsushi/tagbar
+[submodule "inkpot"]
+	path = pack/bundle/start/inkpot
+	url = https://github.com/ciaranm/inkpot.git
+[submodule "palenight"]
+	path = pack/bundle/start/palenight
+	url = https://github.com/drewtempelmeyer/palenight.vim.git
