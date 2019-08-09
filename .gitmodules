@@ -19,9 +19,9 @@
 [submodule "pack/bundle/start/vim-colors-solarized"]
 	path = pack/bundle/start/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized
-[submodule "pack/bundle/start/easygrep"]
-	path = pack/bundle/opt/easygrep
-	url = https://github.com/vim-scripts/EasyGrep
+[submodule "easygrep"]
+	path = pack/bundle/start/easygrep
+	url = https://github.com/dkprice/vim-easygrep
 [submodule "pack/bundle/start/vim-grepper"]
 	path = pack/bundle/opt/vim-grepper
 	url = https://github.com/mhinz/vim-grepper
