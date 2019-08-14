@@ -55,3 +55,6 @@
 [submodule "palenight"]
 	path = pack/bundle/start/palenight
 	url = https://github.com/drewtempelmeyer/palenight.vim.git
+[submodule "vim-buftabline"]
+	path = pack/bundle/start/vim-buftabline
+	url = https://github.com/ap/vim-buftabline.git
