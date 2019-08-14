@@ -52,6 +52,7 @@ let g:tagbar_sort = 0
 " Configure ctrlp
 let g:ctrlp_map = '<space>'
 let g:ctrlp_cmd = 'CtrlPBuffer'
+map ,r :CtrlPMRUFiles<CR>
 
 " Set colorscheme
 if has('gui_running')
@@ -397,10 +398,10 @@ let g:pydoc_cmd="C:/Python27/Lib/pydoc.py"
 
 " Configure MRU
 " let MRU_Exclude_Files='Temp\\bzr_log'
-let MRU_Window_Height=15
-let MRU_Max_Menu_Entries=40
-let MRU_Max_Submenu_Entries=50
-map ,r :MRU<CR>
+" let MRU_Window_Height=15
+" let MRU_Max_Menu_Entries=40
+" let MRU_Max_Submenu_Entries=50
+" map ,r :MRU<CR>
 
 " Set vim to full screen
 map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
