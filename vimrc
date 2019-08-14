@@ -55,7 +55,7 @@ let g:ctrlp_cmd = 'CtrlPBuffer'
 
 " Set colorscheme
 if has('gui_running')
-    colorscheme palenight
+    colorscheme dracula
 endif
 
 " Render vim incompatible with Vi, but adds functionality
