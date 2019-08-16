@@ -32,7 +32,7 @@
 	path = pack/bundle/start/gruvbox
 	url = https://github.com/morhetz/gruvbox
 [submodule "pack/bundle/start/vim-airline"]
-	path = pack/bundle/opt/vim-airline
+	path = pack/bundle/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline
 [submodule "pack/bundle/start/dracula"]
 	path = pack/bundle/start/dracula
@@ -56,5 +56,5 @@
 	path = pack/bundle/start/palenight
 	url = https://github.com/drewtempelmeyer/palenight.vim.git
 [submodule "vim-buftabline"]
-	path = pack/bundle/start/vim-buftabline
+	path = pack/bundle/opt/vim-buftabline
 	url = https://github.com/ap/vim-buftabline.git
