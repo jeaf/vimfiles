@@ -34,10 +34,10 @@ let g:airline_section_z = '%l/%L [col:%c] %P'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ''
-" let g:airline#extensions#tabline#buffer_idx_mode = 1
+let g:airline#extensions#tabline#buffer_idx_mode = 1
 let g:airline#extensions#tabline#show_tab_type = 0
-let g:airline#extensions#tabline#buffer_nr_show = 1
-let g:airline#extensions#tabline#buffer_nr_format = '[%s] '
+" let g:airline#extensions#tabline#buffer_nr_show = 1
+" let g:airline#extensions#tabline#buffer_nr_format = '[%s] '
 nmap ,1 <Plug>AirlineSelectTab1
 nmap ,2 <Plug>AirlineSelectTab2
 nmap ,3 <Plug>AirlineSelectTab3
@@ -49,8 +49,10 @@ nmap ,8 <Plug>AirlineSelectTab8
 nmap ,9 <Plug>AirlineSelectTab9
 
 " Configure ctrlp
-let g:ctrlp_map = '<space>'
+" let g:ctrlp_map = '<space>'
 let g:ctrlp_cmd = 'CtrlPBuffer'
+let g:ctrlp_switch_buffer = 0 " This disables switching to a window with a buffer instead of
+                              " showing the buffer in the current window
 map ,r :CtrlPMRUFiles<CR>
 
 " Set colorscheme
@@ -258,8 +260,8 @@ vmap ,u <esc>l3x<esc>'<4x<esc>'>$
 " Buffer/windows mappings
 "
 
-" Easier switching to a buffer (disabled, we use ctrlp instead)
-" :nnoremap <space> :buffers<CR>:buffer<Space>
+" Easier switching to a buffer
+:nnoremap <space> :buffers<CR>:buffer<Space>
 
 " Faster prev, next, first, last for buffers
 map <A-h> :bprevious<cr>
