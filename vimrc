@@ -264,12 +264,14 @@ vmap ,u <esc>l3x<esc>'<4x<esc>'>$
 :nnoremap <space> :buffers<CR>:buffer<Space>
 
 " Faster prev, next, first, last for buffers
-map <A-h> :bprevious<cr>
+map <S-Tab> :bprevious<cr>
+map <Tab> :bnext<cr>
+" map <A-h> :bprevious<cr>
+" map <A-l> :bnext<cr>
 " map <A-h> :MBEbp<cr>
-map <A-l> :bnext<cr>
 " map <A-l> :MBEbn<cr>
-map <A-k> :bfirst<cr>
-map <A-j> :blast<cr>
+" map <A-k> :bfirst<cr>
+" map <A-j> :blast<cr>
 
 " Buffer closing
 map ,w :Bdelete<cr>
