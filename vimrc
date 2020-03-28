@@ -32,12 +32,17 @@ let g:airline_section_b = '%n'
 let g:airline_section_y = '[%{(&fenc==""?&enc:&fenc)}, %{&ff}]'
 let g:airline_section_z = '%l/%L [col:%c] %P'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline#extensions#tabline#alt_sep = 0
 let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ''
+let g:airline#extensions#tabline#right_sep = ''
+let g:airline#extensions#tabline#right_alt_sep = ''
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 let g:airline#extensions#tabline#show_tab_type = 0
-" let g:airline#extensions#tabline#buffer_nr_show = 1
-" let g:airline#extensions#tabline#buffer_nr_format = '[%s] '
+let g:airline#extensions#tabline#show_close_button = 1
+let g:airline#extensions#tabline#close_symbol = 'X'
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#tabline#buffer_nr_format = '[%s] '
 nmap ,1 <Plug>AirlineSelectTab1
 nmap ,2 <Plug>AirlineSelectTab2
 nmap ,3 <Plug>AirlineSelectTab3
@@ -59,7 +64,8 @@ map ,r :CtrlPMRUFiles<CR>
 if has('gui_running')
     colorscheme dracula
 else
-    colorscheme ron
+    "colorscheme palenight
+    colorscheme jellybeans
 endif
 
 " Render vim incompatible with Vi, but adds functionality
