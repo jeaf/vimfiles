@@ -58,6 +58,8 @@ map ,r :CtrlPMRUFiles<CR>
 " Set colorscheme
 if has('gui_running')
     colorscheme dracula
+else
+    colorscheme ron
 endif
 
 " Render vim incompatible with Vi, but adds functionality
