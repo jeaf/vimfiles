@@ -10,15 +10,9 @@
 [submodule "pack/bundle/start/iosvkem"]
 	path = pack/bundle/start/iosvkem
 	url = https://github.com/neutaaaaan/iosvkem
-[submodule "pack/bundle/start/jellybeans"]
-	path = pack/bundle/start/jellybeans
-	url = https://github.com/nanotech/jellybeans.vim
 [submodule "pack/bundle/start/nerdtree"]
 	path = pack/bundle/opt/nerdtree
 	url = https://github.com/scrooloose/nerdtree
-[submodule "pack/bundle/start/vim-colors-solarized"]
-	path = pack/bundle/start/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized
 [submodule "easygrep"]
 	path = pack/bundle/start/easygrep
 	url = https://github.com/dkprice/vim-easygrep
@@ -28,18 +22,9 @@
 [submodule "pack/bundle/start/vim-vividchalk"]
 	path = pack/bundle/start/vim-vividchalk
 	url = https://github.com/tpope/vim-vividchalk
-[submodule "pack/bundle/start/gruvbox"]
-	path = pack/bundle/start/gruvbox
-	url = https://github.com/morhetz/gruvbox
 [submodule "pack/bundle/start/vim-airline"]
 	path = pack/bundle/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline
-[submodule "pack/bundle/start/dracula"]
-	path = pack/bundle/start/dracula
-	url = https://github.com/dracula/vim
-[submodule "pack/bundle/start/tender"]
-	path = pack/bundle/start/tender
-	url = https://github.com/jacoborus/tender.vim
 [submodule "pack/bundle/start/minibufexpl"]
 	path = pack/bundle/opt/minibufexpl
 	url = https://github.com/fholgado/minibufexpl.vim

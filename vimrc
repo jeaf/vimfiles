@@ -62,10 +62,8 @@ map ,r :CtrlPMRUFiles<CR>
 
 " Set colorscheme
 if has('gui_running')
-    colorscheme dracula
+    colorscheme vividchalk
 else
-    "colorscheme palenight
-    colorscheme jellybeans
 endif
 
 " Render vim incompatible with Vi, but adds functionality
