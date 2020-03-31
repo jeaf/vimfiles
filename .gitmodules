@@ -43,3 +43,6 @@
 [submodule "vim-buftabline"]
 	path = pack/bundle/opt/vim-buftabline
 	url = https://github.com/ap/vim-buftabline.git
+[submodule "pack/bundle/opt/awesome-vim-colorschemes"]
+	path = pack/bundle/opt/awesome-vim-colorschemes
+	url = https://github.com/rafi/awesome-vim-colorschemes

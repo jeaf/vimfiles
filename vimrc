@@ -2,6 +2,10 @@
 set langmenu=en_US.UTF-8    " sets the language of the menu (gvim)
 " language en                 " sets the language of the messages / ui (vim)
 
+" Load packages. Colors don't need this, the colorscheme command will look
+" under opt (see help colo)
+"packadd! vim-awesome-colorschemes
+
 " Allow using a specifc set of settings per directory
 " (disabled because of security risks)
 " set exrc
@@ -62,8 +66,9 @@ map ,r :CtrlPMRUFiles<CR>
 
 " Set colorscheme
 if has('gui_running')
-    colorscheme vividchalk
+    colorscheme afterglow
 else
+    colorscheme afterglow
 endif
 
 " Render vim incompatible with Vi, but adds functionality
