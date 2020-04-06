@@ -36,26 +36,26 @@ let g:airline_section_b = '%n'
 let g:airline_section_y = '[%{(&fenc==""?&enc:&fenc)}, %{&ff}]'
 let g:airline_section_z = '%l/%L [col:%c] %P'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
-let g:airline#extensions#tabline#alt_sep = 0
-let g:airline#extensions#tabline#left_sep = ''
-let g:airline#extensions#tabline#left_alt_sep = ''
-let g:airline#extensions#tabline#right_sep = ''
-let g:airline#extensions#tabline#right_alt_sep = ''
-let g:airline#extensions#tabline#buffer_idx_mode = 1
+" let g:airline#extensions#tabline#alt_sep = 0
+" let g:airline#extensions#tabline#left_sep = ''
+" let g:airline#extensions#tabline#left_alt_sep = ''
+" let g:airline#extensions#tabline#right_sep = ''
+" let g:airline#extensions#tabline#right_alt_sep = ''
+" let g:airline#extensions#tabline#buffer_idx_mode = 1
 let g:airline#extensions#tabline#show_tab_type = 0
 let g:airline#extensions#tabline#show_close_button = 1
 let g:airline#extensions#tabline#close_symbol = 'X'
 let g:airline#extensions#tabline#buffer_nr_show = 1
-let g:airline#extensions#tabline#buffer_nr_format = '[%s] '
-nmap ,1 <Plug>AirlineSelectTab1
-nmap ,2 <Plug>AirlineSelectTab2
-nmap ,3 <Plug>AirlineSelectTab3
-nmap ,4 <Plug>AirlineSelectTab4
-nmap ,5 <Plug>AirlineSelectTab5
-nmap ,6 <Plug>AirlineSelectTab6
-nmap ,7 <Plug>AirlineSelectTab7
-nmap ,8 <Plug>AirlineSelectTab8
-nmap ,9 <Plug>AirlineSelectTab9
+" let g:airline#extensions#tabline#buffer_nr_format = '[%s] '
+" nmap ,1 <Plug>AirlineSelectTab1
+" nmap ,2 <Plug>AirlineSelectTab2
+" nmap ,3 <Plug>AirlineSelectTab3
+" nmap ,4 <Plug>AirlineSelectTab4
+" nmap ,5 <Plug>AirlineSelectTab5
+" nmap ,6 <Plug>AirlineSelectTab6
+" nmap ,7 <Plug>AirlineSelectTab7
+" nmap ,8 <Plug>AirlineSelectTab8
+" nmap ,9 <Plug>AirlineSelectTab9
 
 " Configure ctrlp
 " let g:ctrlp_map = '<space>'
@@ -273,6 +273,7 @@ vmap ,u <esc>l3x<esc>'<4x<esc>'>$
 
 " Easier switching to a buffer
 :nnoremap <space> :buffers<CR>:buffer<Space>
+:nnoremap <enter> <C-^>
 
 " Faster prev, next, first, last for buffers
 map <S-Tab> :bprevious<cr>
