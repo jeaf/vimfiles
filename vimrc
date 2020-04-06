@@ -80,10 +80,11 @@ set nocompatible
 
 " swap the colon and the semi-colon
 " (normal to command mode <-> repeat search for t and f commands)
-noremap <A-;> ;
-noremap <A-,> ,
-map ; :
-map q; q:
+"noremap <A-;> ;
+"noremap <A-,> ,
+noremap ,, ,
+"map ; :
+"map q; q:
 
 " Map the search command for French keyboard
 map é /
@@ -318,7 +319,7 @@ vmap <C-Right> >gv
 
 " Map ALT-D to set the current directory to the directory of the current
 " buffer. Also ,- to open netrw (dir explorer) for containing folder
-nnoremap <A-d> :cd %:p:h<CR>:pwd<CR>
+nnoremap ,d :cd %:p:h<CR>:pwd<CR>
 nmap - :e %:p:h<CR>
 
 " Fix netrw bug that causes weird buffers to appear, and breaks bn bp
@@ -406,7 +407,7 @@ noremap <A-p> ['
 noremap <A-n> ]'
 
 " Switch between cpp and h
-map <A-o> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
+map ,o :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
 
 " Configure pydoc
 let g:pydoc_cmd="C:/Python27/Lib/pydoc.py"
