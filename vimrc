@@ -82,8 +82,9 @@ set nocompatible
 " (normal to command mode <-> repeat search for t and f commands)
 "noremap <A-;> ;
 "noremap <A-,> ,
-noremap ,, ,
-"map ; :
+nnoremap <Right> ;
+nnoremap <Left> ,
+map ; :
 "map q; q:
 
 " Map the search command for French keyboard
