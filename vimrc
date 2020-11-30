@@ -5,7 +5,7 @@ set langmenu=en_US.UTF-8    " sets the language of the menu (gvim)
 " Load packages. Colors don't need this, the colorscheme command will look
 " under opt (see help colo)
 "packadd! vim-awesome-colorschemes
-packadd IndexedSearch
+"packadd! IndexedSearch " now natively supported, see shortmess
 
 " Allow using a specifc set of settings per directory
 " (disabled because of security risks)
@@ -179,10 +179,11 @@ set tildeop
 syntax on
 
 " Set search options
-set ignorecase " Will ignore case in searches...
-set smartcase  " ...unless capital letters are used in the search pattern
-set hlsearch   " Highlight matches with the last search pattern
-set incsearch  " Search will be incremental
+set ignorecase   " Will ignore case in searches...
+set smartcase    " ...unless capital letters are used in the search pattern
+set hlsearch     " Highlight matches with the last search pattern
+set incsearch    " Search will be incremental
+set shortmess-=S " Allow showing match index (e.g., match 3/5)
 
 " Always show a status line at the bottom of the screen, even if there is a single window
 set laststatus=2
