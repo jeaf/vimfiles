@@ -5,6 +5,7 @@ set langmenu=en_US.UTF-8    " sets the language of the menu (gvim)
 " Load packages. Colors don't need this, the colorscheme command will look
 " under opt (see help colo)
 "packadd! vim-awesome-colorschemes
+packadd IndexedSearch
 
 " Allow using a specifc set of settings per directory
 " (disabled because of security risks)

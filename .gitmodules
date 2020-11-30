@@ -46,3 +46,6 @@
 [submodule "pack/bundle/opt/awesome-vim-colorschemes"]
 	path = pack/bundle/opt/awesome-vim-colorschemes
 	url = https://github.com/rafi/awesome-vim-colorschemes
+[submodule "pack/bundle/opt/IndexedSearch"]
+	path = pack/bundle/opt/IndexedSearch
+	url = https://github.com/vim-scripts/IndexedSearch
