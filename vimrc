@@ -29,7 +29,7 @@ let g:tagbar_sort = 0
 " on network drives in certain situations)
 " let g:loaded_netrwPlugin = 1
 
-" Configure airline
+" airline {{{
 let g:airline#extensions#disable_rtp_load = 1
 let g:airline_extensions = ['tabline']
 let g:airline_section_b = '%n'
@@ -56,6 +56,7 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 " nmap ,7 <Plug>AirlineSelectTab7
 " nmap ,8 <Plug>AirlineSelectTab8
 " nmap ,9 <Plug>AirlineSelectTab9
+" }}}
 
 " Configure ctrlp
 " let g:ctrlp_map = '<space>'
@@ -77,6 +78,24 @@ set nocompatible
 " Set window size (disabled because it is annoying with the command-line vim)
 " set columns=120
 " set lines=40
+
+" Setup folding for vimscript files
+augroup filetype_vim
+    autocmd!
+    autocmd FileType vim setlocal foldmethod=marker
+augroup END
+
+" Bookmarks {{{
+function ToggleBookmark()
+    for  i in ["'A", "'B", "'C", "'D", "'E", "'F", "'G"]
+        if line (i) <= 0
+            echom i
+            break
+        endif
+    endfor
+endfunction
+nnoremap <F2> :call ToggleBookmark()<CR>
+" }}}
 
 " swap the colon and the semi-colon
 " (normal to command mode <-> repeat search for t and f commands)
@@ -116,7 +135,7 @@ set complete=.,w,b
 " :map <C-w> :tabclose<cr>
 " :map <C-t> :tabnew<cr>
 
-" Setup the status line
+" status line {{{
 " set statusline=%M[%n]\ %<%F%h%r\ %=%l,%c%V\ (%P\ of\ %L\ lines)
 " set statusline=%M[%n]\ %t%<%h%r\ %y\ %f\ %=%l,%c%V\ (%P\ of\ %L\ lines)\ 0x%-4B\ [%{(&fenc==\"\"?&enc:&fenc)}]\ [%{&ff}]
 set statusline=%M[%n]\ %t\ %(%H%R%W\ %)                      " tail of the filename
@@ -129,6 +148,7 @@ set statusline+=%=                                           " left/right separa
 set statusline+=%l/%L                                        " cursor line/total lines
 set statusline+=\ [col:%c]                                   " cursor column
 set statusline+=\ %P                                         " percent through file
+" }}}
 
 " Setup the gui tab label
 " function GuiTabLabel()
@@ -212,7 +232,7 @@ inoremap <C-S>		<C-O>:update<CR>
 set nobackup
 set noswapfile
 
-" Set up the viminfo option (session persistence)
+" viminfo option (session persistence) {{{
 set viminfo='1000 " Save marks for 1000 files
 set viminfo+=f1   " Save global marks
 set viminfo+=<500 " Save max 500 lines for each of the registers
@@ -222,6 +242,7 @@ set viminfo+=/500 " Save max 500 lines of search history
 " set viminfo+=%    " Save buffer list (we don't do it anymore because after
                     " a while, the buffer list contains too many things and
                     " is more difficult to work with.
+" }}}
 
 " Set up the session options
 set sessionoptions+=resize
@@ -345,7 +366,7 @@ if has("gui_running")
   endif
 endif
 
-" Setup some mappings for implementing indentation text objects
+" indentation text objects {{{
 " Taken from: http://vim.wikia.com/wiki/Indent_text_object
 " Changes to allow blank lines in blocks, and
 " Top level blocks (zero indent) separated by two or more blank lines.
@@ -389,6 +410,7 @@ function! IndTxtObj(inner)
     normal! $
   endif
 endfunction
+" }}}
 
 " Setup wrapping
 set nowrap
