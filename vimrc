@@ -87,10 +87,19 @@ augroup END
 
 " Bookmarks {{{
 function ToggleBookmark()
-    for  i in ["'A", "'B", "'C", "'D", "'E", "'F", "'G"]
-        if line (i) <= 0
-            echom i
+    for i in ["A", "B", "C", "D", "E", "F", "G", "H", "I"]
+        if line ("'" . i) <= 0
+            echo i
+            execute "normal! m" . i
             break
+        else
+            let p = getpos(i)
+            let bufnum = p[0]
+            let linenum = p[1]
+            if bufnum == bufnr() && linenum == line(".")
+                execute "normal! delmarks " . i
+                break
+            endif
         endif
     endfor
 endfunction
