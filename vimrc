@@ -6,6 +6,7 @@ set langmenu=en_US.UTF-8    " sets the language of the menu (gvim)
 " under opt (see help colo)
 "packadd! vim-awesome-colorschemes
 "packadd! IndexedSearch " now natively supported, see shortmess
+packadd! vim-signature
 
 " Allow using a specifc set of settings per directory
 " (disabled because of security risks)
@@ -87,23 +88,26 @@ augroup END
 
 " Bookmarks {{{
 function ToggleBookmark()
-    for i in ["A", "B", "C", "D", "E", "F", "G", "H", "I"]
-        if line ("'" . i) <= 0
-            echo i
-            execute "normal! m" . i
+    let bm_letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q"]
+    let mark_removed = 0
+    for i in bm_letters
+        let p = getpos("'" . i)
+        if p[0] == bufnr() && p[1] == line(".")
+            execute "normal m" . i
+            let mark_removed = 1
             break
-        else
-            let p = getpos(i)
-            let bufnum = p[0]
-            let linenum = p[1]
-            if bufnum == bufnr() && linenum == line(".")
-                execute "normal! delmarks " . i
-                break
-            endif
         endif
     endfor
+    if !mark_removed
+        for i in bm_letters
+            if line ("'" . i) <= 0
+                execute "normal m" . i
+                break
+            endif
+        endfor
+    endif
 endfunction
-nnoremap <F2> :call ToggleBookmark()<CR>
+nnoremap <C-F2> :call ToggleBookmark()<CR>
 " }}}
 
 " swap the colon and the semi-colon
