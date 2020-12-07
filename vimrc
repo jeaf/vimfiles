@@ -87,7 +87,7 @@ augroup filetype_vim
 augroup END
 
 " Bookmarks {{{
-function ToggleBookmark()
+function BookmarkToggle()
     let bm_letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q"]
     let mark_removed = 0
     for i in bm_letters
@@ -107,7 +107,19 @@ function ToggleBookmark()
         endfor
     endif
 endfunction
-nnoremap <C-F2> :call ToggleBookmark()<CR>
+let g:bm_current_idx = 0
+function BookmarkNext()
+    let bm_letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q"]
+    for i in bm_letters
+        if line ("'" . i) > 0
+            echom "Go to " . i
+            execute "normal '" . i
+            break
+        endif
+    endfor
+endfunction
+nnoremap <C-F2> :call BookmarkToggle()<CR>
+nnoremap <F2> :call BookmarkNext()<CR>
 " }}}
 
 " swap the colon and the semi-colon
