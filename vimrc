@@ -88,7 +88,7 @@ augroup END
 
 " Bookmarks {{{
 function BookmarkToggle()
-    let bm_letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q"]
+    let bm_letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
     let mark_removed = 0
     for i in bm_letters
         let p = getpos("'" . i)
@@ -108,18 +108,24 @@ function BookmarkToggle()
     endif
 endfunction
 let g:bm_current_idx = 0
-function BookmarkNext()
-    let bm_letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q"]
-    for i in bm_letters
+function BookmarkNext(direction)
+    let bm_letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+    for x in bm_letters
+        let g:bm_current_idx += a:direction
+        if g:bm_current_idx < 0
+            let g:bm_current_idx = len(bm_letters) - 1
+        endif
+        let g:bm_current_idx %= len(bm_letters)
+        let i = bm_letters[g:bm_current_idx]
         if line ("'" . i) > 0
-            echom "Go to " . i
             execute "normal '" . i
             break
         endif
     endfor
 endfunction
 nnoremap <C-F2> :call BookmarkToggle()<CR>
-nnoremap <F2> :call BookmarkNext()<CR>
+nnoremap <F2> :call BookmarkNext(1)<CR>
+nnoremap <S-F2> :call BookmarkNext(-1)<CR>
 " }}}
 
 " swap the colon and the semi-colon
