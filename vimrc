@@ -17,7 +17,7 @@ let g:no_buffers_menu = 1
 
 " Configure GUI
 set guioptions=begrLt
-set guifont=Consolas:h11:cANSI,Courier_New:h10:cANSI
+set guifont=Monospace\ 10,Consolas:h11:cANSI,Courier_New:h10:cANSI
 
 " Configure TagBar
 let g:tagbar_case_insensitive = 1
