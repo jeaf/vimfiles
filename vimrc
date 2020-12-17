@@ -88,7 +88,7 @@ augroup END
 
 " Bookmarks {{{
 function BookmarkToggle()
-    let bm_letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+    let bm_letters = ["Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
     let mark_removed = 0
     for i in bm_letters
         let p = getpos("'" . i)
@@ -109,7 +109,7 @@ function BookmarkToggle()
 endfunction
 let g:bm_current_idx = 0
 function BookmarkNext(direction)
-    let bm_letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+    let bm_letters = ["Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
     for x in bm_letters
         let g:bm_current_idx += a:direction
         if g:bm_current_idx < 0
