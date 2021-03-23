@@ -52,3 +52,6 @@
 [submodule "pack/bundle/opt/targets"]
 	path = pack/bundle/opt/targets
 	url = https://github.com/wellle/targets.vim
+[submodule "pack/bundle/opt/line-targets"]
+	path = pack/bundle/opt/line-targets
+	url = https://github.com/wellle/line-targets.vim
