@@ -49,3 +49,6 @@
 [submodule "pack/bundle/opt/IndexedSearch"]
 	path = pack/bundle/opt/IndexedSearch
 	url = https://github.com/vim-scripts/IndexedSearch
+[submodule "pack/bundle/opt/targets"]
+	path = pack/bundle/opt/targets
+	url = https://github.com/wellle/targets.vim

@@ -7,6 +7,7 @@ set langmenu=en_US.UTF-8    " sets the language of the menu (gvim)
 "packadd! vim-awesome-colorschemes
 "packadd! IndexedSearch " now natively supported, see shortmess
 packadd! vim-signature
+packadd! targets
 
 " Allow using a specifc set of settings per directory
 " (disabled because of security risks)
