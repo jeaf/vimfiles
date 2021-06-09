@@ -7,18 +7,9 @@
 [submodule "pack/bundle/opt/agrep"]
 	path = pack/bundle/opt/agrep
 	url = https://github.com/ramele/agrep
-[submodule "pack/bundle/start/iosvkem"]
-	path = pack/bundle/start/iosvkem
-	url = https://github.com/neutaaaaan/iosvkem
 [submodule "pack/bundle/start/nerdtree"]
 	path = pack/bundle/opt/nerdtree
 	url = https://github.com/scrooloose/nerdtree
-[submodule "pack/bundle/start/vim-grepper"]
-	path = pack/bundle/opt/vim-grepper
-	url = https://github.com/mhinz/vim-grepper
-[submodule "pack/bundle/start/vim-vividchalk"]
-	path = pack/bundle/start/vim-vividchalk
-	url = https://github.com/tpope/vim-vividchalk
 [submodule "pack/bundle/start/vim-airline"]
 	path = pack/bundle/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline
@@ -31,12 +22,6 @@
 [submodule "pack/bundle/start/tagbar"]
 	path = pack/bundle/start/tagbar
 	url = https://github.com/majutsushi/tagbar
-[submodule "inkpot"]
-	path = pack/bundle/start/inkpot
-	url = https://github.com/ciaranm/inkpot.git
-[submodule "palenight"]
-	path = pack/bundle/start/palenight
-	url = https://github.com/drewtempelmeyer/palenight.vim.git
 [submodule "vim-buftabline"]
 	path = pack/bundle/opt/vim-buftabline
 	url = https://github.com/ap/vim-buftabline.git
